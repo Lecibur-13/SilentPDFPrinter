@@ -1,0 +1,29 @@
+{
+  "name": "silentpdfprinter",
+  "version": "1.0.0",
+  "description": "Print PDF from web apps in silent mode",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nw src/",
+    "prod": "nwbuild --platform win --arch x64 --outDir dist src",
+    "prodTest": "nwbuild --platforms win32,win64 --outDir dist/ src"
+  },
+  "keywords": [
+    "printer",
+    "thermal",
+    "node",
+    "angular",
+    "react",
+    "server"
+  ],
+  "author": "Rubicel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nw": "^0.77.0",
+    "nw-builder": "^4.3.2"
+  }
+}
